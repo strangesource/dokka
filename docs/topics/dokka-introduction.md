@@ -13,9 +13,9 @@ Here are some libraries that use Dokka for their API reference documentation:
 
 * [kotlinx.coroutines](https://kotlinlang.org/api/kotlinx.coroutines/)
 * [Bitmovin](https://cdn.bitmovin.com/player/android/3/docs/index.html)
-* [Hexagon](https://hexagonkt.com/api/index.html)
+* [Hexagon](https://hexagontk.com/stable/api/)
 * [Ktor](https://api.ktor.io/)
-* [OkHttp](https://square.github.io/okhttp/4.x/okhttp/okhttp3/) (Markdown)
+* [OkHttp](https://square.github.io/okhttp/5.x/okhttp/okhttp3/)
 
 You can run Dokka using [Gradle](dokka-gradle.md), [Maven](dokka-maven.md) or from the [command line](dokka-cli.md). It is also
 [highly pluggable](dokka-plugins.md).
@@ -24,5 +24,5 @@ See [Get started with Dokka](dokka-get-started.md) to take your first steps in u
 
 ## Community
 
-Dokka has a dedicated `#dokka` channel in [Kotlin Community Slack](https://surveys.jetbrains.com/s3/kotlin-slack-sign-up)
+Dokka has a dedicated `#dokka` channel in [Kotlin Community Slack](https://kotl.in/slack)
 where you can chat about Dokka, its plugins and how to develop them, as well as get in touch with maintainers.

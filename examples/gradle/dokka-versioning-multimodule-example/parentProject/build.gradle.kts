@@ -1,10 +1,14 @@
+/*
+ * Copyright 2014-2024 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license.
+ */
+
 import org.jetbrains.dokka.gradle.DokkaMultiModuleTask
 import org.jetbrains.dokka.versioning.VersioningPlugin
 import org.jetbrains.dokka.versioning.VersioningConfiguration
 
 buildscript {
     dependencies {
-        classpath("org.jetbrains.dokka:versioning-plugin:1.8.10")
+        classpath("org.jetbrains.dokka:versioning-plugin:2.0.0")
     }
 
     repositories {

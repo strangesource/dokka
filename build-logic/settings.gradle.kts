@@ -1,18 +1,32 @@
+/*
+ * Copyright 2014-2024 JetBrains s.r.o. Use of this source code is governed by the Apache 2.0 license.
+ */
+
 rootProject.name = "build-logic"
 
 pluginManagement {
     repositories {
-        gradlePluginPortal()
-        mavenCentral()
+        mavenCentral {
+            setUrl("https://cache-redirector.jetbrains.com/maven-central")
+            name = "MavenCentral-JBCache"
+        }
+        maven("https://cache-redirector.jetbrains.com/plugins.gradle.org/m2") {
+            name = "GradlePluginPortal-JBCache"
+        }
     }
+    includeBuild("../build-settings-logic")
 }
 
-@Suppress("UnstableApiUsage")
 dependencyResolutionManagement {
+    @Suppress("UnstableApiUsage")
     repositories {
-        mavenCentral()
-        google()
-        gradlePluginPortal()
+        mavenCentral {
+            setUrl("https://cache-redirector.jetbrains.com/maven-central")
+            name = "MavenCentral-JBCache"
+        }
+        maven("https://cache-redirector.jetbrains.com/plugins.gradle.org/m2") {
+            name = "GradlePluginPortal-JBCache"
+        }
     }
 
     versionCatalogs {
@@ -20,4 +34,8 @@ dependencyResolutionManagement {
             from(files("../gradle/libs.versions.toml"))
         }
     }
+}
+
+plugins {
+    id("dokkasettings")
 }

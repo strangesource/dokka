@@ -2,6 +2,9 @@
 ### Java
 *.class
 
+# new Kotlin 2.0 state dir
+.kotlin/
+
 # Package Files #
 *.jar
 *.war
@@ -11,8 +14,10 @@
 hs_err_pid*
 
 ### IntelliJ
-
-.idea/
+.idea/*
+!.idea/copyright
+!.idea/codeStyles
+**/.idea
 /out/
 
 ## File-based project format:
